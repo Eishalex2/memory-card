@@ -1,11 +1,15 @@
 import PropTypes from 'prop-types';
 
-export default function Card({card, handleClick}) {
+
+export default function Card({imageUrl, id, name, handleClick}) {
 
   return (
     <div>
       <button className="card">
-        <img src={card.url} data-key={card.key} onClick={handleClick}/>
+        <img src={imageUrl} 
+          data-key={id} 
+          onClick={handleClick} 
+          alt={name}/>
       </button>
     </div>
   )
