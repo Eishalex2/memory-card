@@ -37,12 +37,16 @@ export default function Deck({ handleClick }) {
         })
       }
       setPokemon([...requestData]);
-    })
+    });
   }
 
   useEffect(() => {
     getPokemonData()
   }, []);
+
+  function shuffleCards() {
+    setPokemon(pokemon.sort(() => Math.random() - 0.5));
+  }
 
   return (
     <section>
@@ -54,6 +58,7 @@ export default function Deck({ handleClick }) {
             name = {pokemon.name}
             handleClick={() => {
               handleClick(pokemon.id);
+              shuffleCards();
             }}
           />
         )

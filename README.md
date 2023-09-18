@@ -1,8 +1,12 @@
-# React + Vite
+add an end game modal showing best score and current score and play
+again
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Add pokemon names below images
 
-Currently, two official plugins are available:
+add backs of cards that flip when clicked.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+grow the cards when hovered over
+
+Add directions
+
+Make it prettier
