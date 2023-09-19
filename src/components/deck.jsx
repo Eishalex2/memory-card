@@ -1,5 +1,6 @@
 import Card from './card';
 import { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
 const pokemonIdList = [
   1,
@@ -65,4 +66,8 @@ export default function Deck({ handleClick }) {
       })}
     </section>
   )
+}
+
+Deck.propTypes = {
+  handleClick: PropTypes.func
 }
