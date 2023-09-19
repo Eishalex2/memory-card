@@ -51,19 +51,21 @@ export default function Deck({ handleClick }) {
 
   return (
     <section>
-      {pokemon.map(pokemon => {
-        return (
-          <Card
-            imageUrl = {pokemon.imageUrl}
-            key = {pokemon.id}
-            name = {pokemon.name}
-            handleClick={() => {
-              handleClick(pokemon.id);
-              shuffleCards();
-            }}
-          />
-        )
-      })}
+      <div className="deck">
+        {pokemon.map(pokemon => {
+          return (
+            <Card
+              imageUrl = {pokemon.imageUrl}
+              key = {pokemon.id}
+              name = {pokemon.name}
+              handleClick={() => {
+                handleClick(pokemon.id);
+                shuffleCards();
+              }}
+            />
+          )
+        })}
+      </div>
     </section>
   )
 }
