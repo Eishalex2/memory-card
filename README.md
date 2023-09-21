@@ -1,12 +1,21 @@
-add an end game modal showing best score and current score and play
-again
+# Memory Card
+A single-player card game where the player tries to click as many cards in a row as they can without clicking the same card twice.
 
-Add pokemon names below images (done)
+## Link
+https://memory-card-fgdsp76yi-eishalex2.vercel.app/
 
-add backs of cards that flip when clicked.
+## Built with
+- React
+- JavaScript
+- HTML, CSS
+- Vite
 
-grow the cards when hovered over (done)
+## Features
+- Interactive user experience
+- Cards shuffle around on click
+- Keeps track of both current score and the user's high score
 
-Add directions
-
-Make it prettier
+## To Improve
+- Make the cards flip to a backside image and back to the frontside image when clicked
+- Use local storage for the cards for faster loading times
+- Use local storage to save the user's high score
